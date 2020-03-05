@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <style text="type/css">
+    body {
+      font-family: Helvetica;
+    }
+    button {
+      border: none;
+      outline: 0;
+      background-color: #4ea2a3;
+      padding: 10px 28px;
+      font-size: 16px;
+      color: white;
+      margin: 0px 5px;
+    }
+    label {
+      color: #828282;
+      font-size: 16px;
+    }
+    input {
+      margin: 0px 5px;
+      width: 50px;
+      height: 20px;
+      font-size: 15px;
+    }
+  </style>
+  <head>
+    <meta charset="utf-8">
+    <title>Insertion Sort</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+  </head>
+  <body style="margin-top: 20px; display: flex; align-items: center; flex-direction: column">
+    <div style="margin-bottom: 20px;">
+      <button id="sortButton" onmousedown="doSort('sortButton', 'speedInput')" onmouseup="changeOpacity('sortButton')">Sort</button>
+      <label>Speed:</label><input type="number" id="speedInput">
+      <button id="newNumbersButton" onmousedown="getRandomNumbers('newNumbersButton', 'sizeInput')" onmouseup="changeOpacity('newNumbersButton')">New Numbers</button>
+      <label>Size:</label><input type="number" id="sizeInput">
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
